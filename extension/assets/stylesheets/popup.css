@@ -1,0 +1,24 @@
+body {
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  background: #FFFFFF;
+  font-size: 12px;
+  font-family: 'lucida grande', 'lucida sans unicode', lucida, helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+  width: 320px;
+}
+
+
+.header { padding: 4px; margin: 0; background: #F7F7F7; }
+
+.loading { display: none; width: 100%; height: 100%; }
+.loading:first-child { display: table-row; }
+
+.messages { list-style: none; margin: 0; padding: 0; }
+.message { padding: 4px; border-top: 1px solid #E6E6E6; position: relative; }
+.message:hover { background: #F7F7F7; }
+.message-avatar { width: 32px; height: 32px; float: left; }
+.message-avatar img { width: 100%; height: 100%; }
+.message-content { min-height: 32px; margin-left: 36px; line-height: 16px; }
+.message-time { position: absolute; right: 4px; bottom: 0;
+  font-size: 0.8em; color: #AAAAAA; }

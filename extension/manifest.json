@@ -1,0 +1,35 @@
+{
+  "name": "xNotify",
+  "short_name": "xnotify",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "xNotify - 消息通知聚合扩展",
+  "homepage_url": "https://github.com/GDG-Xian/crx-notify",
+
+  "icons": {
+      "16" : "assets/images/icon16.png",
+      "48" : "assets/images/icon48.png",
+      "128": "assets/images/icon128.png"
+  },
+
+  "background": {
+      "scripts": [
+        "assets/javascripts/jquery.js",
+        "assets/javascripts/event.js"
+      ],
+      "persistent": false
+  },
+
+  "browser_action": {
+    "default_icon": "assets/images/icon48.png",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "tabs",
+    "alarms",
+    "<all_urls>"
+  ],
+
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
